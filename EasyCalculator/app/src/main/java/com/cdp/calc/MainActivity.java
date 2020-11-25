@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     double result=0;
     String numb1="";
     String numb2="";
+    String citye="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {//类似Main函数
