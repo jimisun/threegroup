@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/numb7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultid"
+        android:layout_marginTop="30dp"
+        android:text="7"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/numb8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/numb7"
+        android:layout_toRightOf="@id/numb7"
+        android:text="8"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/numb9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/numb8"
+        android:layout_toRightOf="@id/numb8"
+        android:text="9"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/numb9"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:textSize="42sp" />
+
+</RelativeLayout>

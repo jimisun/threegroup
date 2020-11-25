@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/numb0"
+        android:gravity="right|bottom"
+        android:textSize="42sp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/numb0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clearbt"
+        app:layout_constraintRight_toLeftOf="@id/dot"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textSize="42sp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/numb0"
+        app:layout_constraintTop_toTopOf="@id/numb0"
+        app:layout_constraintRight_toLeftOf="@id/equalbt"
+        android:textSize="42sp"
+        android:text="." />
+    <Button
+        android:id="@+id/equalbt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dot"
+        app:layout_constraintTop_toTopOf="@id/dot"
+        app:layout_constraintRight_toLeftOf="@id/divid"
+        android:textSize="42sp"
+        android:text="=" />
+    <Button
+        android:id="@+id/divid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/equalbt"
+        app:layout_constraintTop_toTopOf="@id/equalbt"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="42sp"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/clearbt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/leftkuohao"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:textSize="42sp"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/leftkuohao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/clearbt"
+        app:layout_constraintTop_toTopOf="@id/clearbt"
+        app:layout_constraintRight_toLeftOf="@id/rightkuohao"
+        android:textSize="42sp"
+        android:text="(" />
+    <Button
+        android:id="@+id/rightkuohao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/leftkuohao"
+        app:layout_constraintTop_toTopOf="@id/leftkuohao"
+        app:layout_constraintRight_toLeftOf="@id/singledel"
+        android:textSize="42sp"
+        android:text=")" />
+    <Button
+        android:id="@+id/singledel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/rightkuohao"
+        app:layout_constraintTop_toTopOf="@id/rightkuohao"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="42sp"
+        android:text="Del" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
